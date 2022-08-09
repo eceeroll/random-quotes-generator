@@ -1,0 +1,59 @@
+body {
+    font-family: 'Comfortaa', cursive;;
+}
+
+.container {
+    /* border: 1px solid black; */
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hex-colors {
+    text-align: center;
+    /* border: 1px solid black; */
+    padding: 12px;
+    margin: auto;
+}
+
+.hex-colors h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: changecolor 5s infinite alternate;
+}
+
+h2 {
+    font-size: 2rem;
+    /* border: 1px solid black; */
+    margin-top: 15%;
+}
+@keyframes changecolor{
+
+    0% {
+        color: indigo;
+    }
+    20% {
+        color: red;
+    }
+    40% {
+        color: purple;
+    }
+    60% {
+        color: yellowgreen;
+    }
+    80% {
+        color: palevioletred;
+    }
+    100% {
+        color: blue;
+    }
+
+}
+
+@media(max-width:480px) {
+    .hex-colors h1,h2 {
+        font-size: 1.5rem;
+    }
+}
